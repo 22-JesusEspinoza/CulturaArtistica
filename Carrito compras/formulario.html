@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/formulario.css">
+</head>
+<body>
+
+    <div class="imagen-texto">
+        <h1>FORMULARIO</h1>
+    </div>
+
+    <br><br>
+
+    <div class="formulario">
+        <h2 class="titulo">Contáctanos</h2>
+    
+            <form action="/enviar" method="post" class="formulario">
+                
+                <label for="" class=" formulario__label">Nombres y Apellidos</label>
+                <input type="text" name="nombres" id="nombres" pattern="^[a-zA-Z-   ]+$" title="Por favor, ingrese solo letras" class="formulario__input">
+                
+                <label for="" class=" formulario__label">Email</label>
+                <input type="text" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="formulario__input">
+                
+                <label for="" class=" formulario__label">DNI</label>
+                <input type="text" name="dni" id="dni" class="formulario__input">
+
+                <label for="" class=" formulario__label">Fecha de nacimiento</label>
+                <input type="text" name="fechaNacimiento" id="fechaNacimiento" class="formulario__input">
+
+                <label for="" class=" formulario__label">Codigo Postal</label>
+                <input type="text" name="codigoPostal" id="codigoPostal" class="formulario__input">
+                
+                <label for="" class=" formulario__label">Comentario</label>    
+                <input type="text" name="comentario" id="comentario" class="formulario__input">
+                
+                <input type="submit" class="formulario__submit">     
+              </form>
+          <script src="/js/Form.js"></script>
+          <script src="/js/Formulario.js" ></script>
+    </div>
+
+    <br><br> 
+
+    
+</body>
+    
+</html>
